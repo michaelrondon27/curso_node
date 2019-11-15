@@ -9,6 +9,7 @@
   "author": "Michael Rondon",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^14.2.0"
   },
   "devDependencies": {}
