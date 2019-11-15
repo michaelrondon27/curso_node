@@ -7,7 +7,7 @@ let listarTabla = (base, limite = 10) => {
         console.log(`${ base } * ${ i } = ${ base * i }`);
     }
 
-}
+};
 
 crearArchivo = (base, limite = 10) => {
 
@@ -35,9 +35,9 @@ crearArchivo = (base, limite = 10) => {
 
     });
 
-}
+};
 
 module.exports = {
     crearArchivo,
     listarTabla
-}
+};
