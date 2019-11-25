@@ -3,17 +3,15 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-// app.get('/', function(req, res) {
-//     // res.send('Hello World')
+// Expres HBS Engine
+app.set('view engine', 'hbs');
 
-//     let salida = {
-//         nombre: 'Michael',
-//         edad: 26,
-//         url: req.url
-//     };
-
-//     res.send(salida);
-// });
+app.get('/', function(req, res) {
+    res.render('home', {
+        nombre: 'Michael',
+        anio: new Date().getFullYear()
+    });
+});
 
 app.listen(8080, () => {
     console.log('Escuchando peticiones en el puerto 8080')
